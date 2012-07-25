@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEEFE11115C037E200CDD51B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEFE11015C037E200CDD51B /* UIKit.framework */; };
+		DEEFE11315C037E200CDD51B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEFE11215C037E200CDD51B /* Foundation.framework */; };
+		DEEFE11515C037E200CDD51B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEFE11415C037E200CDD51B /* CoreGraphics.framework */; };
+		DEEFE11B15C037E300CDD51B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEEFE11915C037E300CDD51B /* InfoPlist.strings */; };
+		DEEFE11D15C037E300CDD51B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE11C15C037E300CDD51B /* main.m */; };
+		DEEFE12115C037E300CDD51B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE12015C037E300CDD51B /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DEEFE10C15C037E200CDD51B /* RailsDoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsDoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEFE11015C037E200CDD51B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEEFE11215C037E200CDD51B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEEFE11415C037E200CDD51B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEEFE11815C037E300CDD51B /* RailsDoc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RailsDoc-Info.plist"; sourceTree = "<group>"; };
+		DEEFE11A15C037E300CDD51B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEEFE11C15C037E300CDD51B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEEFE11E15C037E300CDD51B /* RailsDoc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RailsDoc-Prefix.pch"; sourceTree = "<group>"; };
+		DEEFE11F15C037E300CDD51B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEEFE12015C037E300CDD51B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEEFE10915C037E200CDD51B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEFE11115C037E200CDD51B /* UIKit.framework in Frameworks */,
+				DEEFE11315C037E200CDD51B /* Foundation.framework in Frameworks */,
+				DEEFE11515C037E200CDD51B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEEFE10115C037E200CDD51B = {
+			isa = PBXGroup;
+			children = (
+				DEEFE11615C037E300CDD51B /* RailsDoc */,
+				DEEFE10F15C037E200CDD51B /* Frameworks */,
+				DEEFE10D15C037E200CDD51B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEEFE10D15C037E200CDD51B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFE10C15C037E200CDD51B /* RailsDoc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEEFE10F15C037E200CDD51B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFE11015C037E200CDD51B /* UIKit.framework */,
+				DEEFE11215C037E200CDD51B /* Foundation.framework */,
+				DEEFE11415C037E200CDD51B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEEFE11615C037E300CDD51B /* RailsDoc */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFE11F15C037E300CDD51B /* AppDelegate.h */,
+				DEEFE12015C037E300CDD51B /* AppDelegate.m */,
+				DEEFE11715C037E300CDD51B /* Supporting Files */,
+			);
+			path = RailsDoc;
+			sourceTree = "<group>";
+		};
+		DEEFE11715C037E300CDD51B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEEFE11815C037E300CDD51B /* RailsDoc-Info.plist */,
+				DEEFE11915C037E300CDD51B /* InfoPlist.strings */,
+				DEEFE11C15C037E300CDD51B /* main.m */,
+				DEEFE11E15C037E300CDD51B /* RailsDoc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEEFE10B15C037E200CDD51B /* RailsDoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEEFE12415C037E300CDD51B /* Build configuration list for PBXNativeTarget "RailsDoc" */;
+			buildPhases = (
+				DEEFE10815C037E200CDD51B /* Sources */,
+				DEEFE10915C037E200CDD51B /* Frameworks */,
+				DEEFE10A15C037E200CDD51B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RailsDoc;
+			productName = RailsDoc;
+			productReference = DEEFE10C15C037E200CDD51B /* RailsDoc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEEFE10315C037E200CDD51B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DEEFE10615C037E200CDD51B /* Build configuration list for PBXProject "RailsDoc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEEFE10115C037E200CDD51B;
+			productRefGroup = DEEFE10D15C037E200CDD51B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEEFE10B15C037E200CDD51B /* RailsDoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEEFE10A15C037E200CDD51B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEFE11B15C037E300CDD51B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEEFE10815C037E200CDD51B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEEFE11D15C037E300CDD51B /* main.m in Sources */,
+				DEEFE12115C037E300CDD51B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEEFE11915C037E300CDD51B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEEFE11A15C037E300CDD51B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEEFE12215C037E300CDD51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DEEFE12315C037E300CDD51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEEFE12515C037E300CDD51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RailsDoc/RailsDoc-Prefix.pch";
+				INFOPLIST_FILE = "RailsDoc/RailsDoc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DEEFE12615C037E300CDD51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RailsDoc/RailsDoc-Prefix.pch";
+				INFOPLIST_FILE = "RailsDoc/RailsDoc-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEEFE10615C037E200CDD51B /* Build configuration list for PBXProject "RailsDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEFE12215C037E300CDD51B /* Debug */,
+				DEEFE12315C037E300CDD51B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEEFE12415C037E300CDD51B /* Build configuration list for PBXNativeTarget "RailsDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEFE12515C037E300CDD51B /* Debug */,
+				DEEFE12615C037E300CDD51B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEEFE10315C037E200CDD51B /* Project object */;
+}

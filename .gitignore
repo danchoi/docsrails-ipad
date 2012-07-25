@@ -1,3 +1,6 @@
 sdoc/
 classes/
 files/
+project.xcworkspace/
+xcuserdata/
+*.db
