@@ -1,0 +1,100 @@
+  613  fg
+  614  find classes | ruby parse1.rb 
+  615  fg
+  616  ri Sequel.connect
+  617  fg
+  618  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  | more
+  619  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  620  find classes | ruby parse1.rb 
+  621  fg
+  622  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  623  find classes | ruby parse1.rb 
+  624  fg
+  625  find classes -t f | ruby parse1.rb 
+  626  find classes  | grep html | ruby parse1.rb 
+  627  fg
+  628  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  629  fg
+  630  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  631  fg
+  632  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  633  find classes  | grep html | ruby parse1.rb 
+  634  find classes  | grep html 
+  635  find classes  | grep html  | less
+  636  find ./classes  | grep html  | less
+  637  find ./classes  | grep html | ruby parse1.rb 
+  638  fg
+  639  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  640  find ./classes  | grep html | ruby parse1.rb 
+  641  ls classes/AbstractController/ActionNotFound.html 
+  642  less classes/AbstractController/ActionNotFound.html
+  643  fg
+  644  find ./classes  | grep html | ruby parse1.rb 
+  645  pwd
+  646  ls
+  647  fg
+  648  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  649  find ./classes  | grep html | ruby parse1.rb 
+  650  fg
+  651  fg
+  652  find ./classes  | grep html | ruby parse1.rb 
+  653  fg
+  654  find ./classes  | grep html | ruby parse1.rb 
+  655  fg
+  656  fg
+  657  find ./classes  | grep html | ruby parse1.rb  | more
+  658  fg
+  659  find ./classes  | grep html | ruby parse1.rb  | more
+  660  find ./classes  | grep html | ruby parse1.rb  
+  661  fg
+  662  find ./classes  | grep html | ruby parse1.rb  
+  663  fg
+  664  ruby parse1.rb classes/ActionDispatch/Assertions/RoutingAssertions.html  
+  665  find ./classes  | grep html | ruby parse1.rb  
+  666  fg
+  667  find ./classes  | grep html | ruby parse1.rb  
+  668  fg
+  669  ls
+  670  ls -lh
+  671  sqlite3 rails.db 
+  672  sqlite3 rails.db 'select title from pages' | less
+  673  sqlite3 rails.db 'select page_id, title from pages' | less
+  674  sqlite3 rails.db 'select page_id, title, description from pages' | less
+  675  sqlite3 rails.db 'select page_id, title from pages where description is not null' | less
+  676  sqlite3 rails.db 'select page_id, title from pages where description is null' | less
+  677  sqlite3 rails.db 'select page_id, title from pages where description is not null' | less
+  678  fg
+  679  find classes/ | more
+  680  cp classes//ActionController/Base.html .
+  681  ls
+  682  fg
+  683  rm rails.db 
+  684  sqlite3 rails.db < schema.sql 
+  685  fg
+  686  find classes/ | more
+  687  sqlite3 rails.db < schema.sql 
+  688  fg
+  689  rm rails.db 
+  690  sqlite3 rails.db < schema.sql 
+  691  find classes/ | more
+  692* 
+  693  fg
+  694  find ./classes  | grep html | ruby parse1.rb  
+  695  sqlite3 rails.db 'select page_id, title from pages where description is not null' | less
+  696  sqlite3 rails.db 'select item_id, title from pages where description is not null' | less
+  697  sqlite3 rails.db 'select item_id, title from pages where description is not null' | wc -l
+  698  sqlite3 rails.db 'select item_id, title from pages where description is null' | wc -l
+  699  sqlite3 rails.db 'select item_id, title from pages where description is not null' | less
+  700  sqlite3 rails.db 'select item_id, page_title, title from pages where description is not null' | less
+  701  sqlite3 rails.db 'select item_id, page_title, title,description  from pages where description is not null' | less
+  702  sqlite3 rails.db 'select item_id, page_title, title,length(description ) from pages where description is not null order by length(description) desc' | less
+  703  sqlite3 rails.db 'select title, item_id, page_title, length(description ) from pages where description is not null order by length(description) desc' | less
+  704  sqlite3 rails.db 'select title, length(description ) from pages where description is not null order by length(description) desc' | less
+  705  sqlite3 rails.db 'select page_title, title, length(description ) from pages where description is not null order by length(description) desc' | less
+  706  sqlite3 rails.db 'select item_id, page_title, title, length(description ) from pages where description is not null order by length(description) desc' | less
+  707  sqlite3 rails.db 'select description where item_id = "M005404"'
+  708  sqlite3 rails.db 'select description from items where item_id = "M005404"'
+  709  sqlite3 rails.db 'select description from pages  where item_id = "M005404"'
+  710  sqlite3 rails.db 'select description, source from pages  where item_id = "M005404"'
+  711  sqlite3 rails.db 'select description, source from pages  where item_id = "M005404"'
+  712  history 100 >> NOTES
