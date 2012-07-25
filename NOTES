@@ -98,3 +98,7 @@
   710  sqlite3 rails.db 'select description, source from pages  where item_id = "M005404"'
   711  sqlite3 rails.db 'select description, source from pages  where item_id = "M005404"'
   712  history 100 >> NOTES
+
+[choi@sparta docrails-ipad]$ sqlite3 rails.db 'select item_id, page_title, title, length(description ) from pages where description is not null and parent_item_id is null order by length(description) desc' | wc -l
+     402
+
