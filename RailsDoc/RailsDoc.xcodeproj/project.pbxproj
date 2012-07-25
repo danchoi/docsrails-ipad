@@ -16,6 +16,8 @@
 		DEEFE12915C0396500CDD51B /* DB.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE12815C0396500CDD51B /* DB.m */; };
 		DEEFE12B15C03BBC00CDD51B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEFE12A15C03BBC00CDD51B /* libsqlite3.0.dylib */; };
 		DEEFE12D15C03BCD00CDD51B /* rails.db in Resources */ = {isa = PBXBuildFile; fileRef = DEEFE12C15C03BCD00CDD51B /* rails.db */; };
+		DEEFE13015C044CE00CDD51B /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE12F15C044CE00CDD51B /* GridView.m */; };
+		DEEFE13315C0470600CDD51B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE13215C0470600CDD51B /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,10 @@
 		DEEFE12815C0396500CDD51B /* DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB.m; sourceTree = "<group>"; };
 		DEEFE12A15C03BBC00CDD51B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		DEEFE12C15C03BCD00CDD51B /* rails.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = rails.db; sourceTree = "<group>"; };
+		DEEFE12E15C044CE00CDD51B /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		DEEFE12F15C044CE00CDD51B /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
+		DEEFE13115C0470600CDD51B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DEEFE13215C0470600CDD51B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		DEEFE11615C037E300CDD51B /* RailsDoc */ = {
 			isa = PBXGroup;
 			children = (
+				DEEFE13115C0470600CDD51B /* RootViewController.h */,
+				DEEFE13215C0470600CDD51B /* RootViewController.m */,
+				DEEFE12E15C044CE00CDD51B /* GridView.h */,
+				DEEFE12F15C044CE00CDD51B /* GridView.m */,
 				DEEFE12715C0396500CDD51B /* DB.h */,
 				DEEFE12815C0396500CDD51B /* DB.m */,
 				DEEFE11F15C037E300CDD51B /* AppDelegate.h */,
@@ -167,6 +177,8 @@
 				DEEFE11D15C037E300CDD51B /* main.m in Sources */,
 				DEEFE12115C037E300CDD51B /* AppDelegate.m in Sources */,
 				DEEFE12915C0396500CDD51B /* DB.m in Sources */,
+				DEEFE13015C044CE00CDD51B /* GridView.m in Sources */,
+				DEEFE13315C0470600CDD51B /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

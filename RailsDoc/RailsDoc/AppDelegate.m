@@ -1,9 +1,9 @@
 #import "AppDelegate.h"
-#import "DB.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
-
 @synthesize window = _window;
+@synthesize rootViewController = _rootViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -12,9 +12,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    DB *db = [[DB alloc] init];
-    NSArray *methods = [db printMethods];
-    NSLog(@"number of methods: %d", [methods count]);
+    self.rootViewController = [[RootViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = _rootViewController;
     return YES;
 }
 
