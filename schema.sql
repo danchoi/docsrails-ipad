@@ -6,7 +6,8 @@ create table pages (
   title text,
   slug text,
   description text,
-  source text
+  source text, 
+  parent_item_id text
 );
 
 create unique index pages_page_id_idx on pages (item_id);
