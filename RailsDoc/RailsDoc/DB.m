@@ -28,7 +28,7 @@ sqlite3 *database;
 
 - (NSArray *) printMethods {
   NSMutableArray *methods = [NSMutableArray array];
-  const char *sql = "select item_id, title, description from pages where parent_item_id is null and description is not null";
+  const char *sql = "select item_id, slug, description from pages where parent_item_id is null and description is not null";
   sqlite3_stmt *statement;
   int sqlResult = sqlite3_prepare_v2(database, sql, -1, &statement, NULL);
   if (sqlResult == SQLITE_OK) {

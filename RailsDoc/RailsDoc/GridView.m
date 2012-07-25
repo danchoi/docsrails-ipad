@@ -11,7 +11,9 @@
 @synthesize imageButtonTargetAction;
 @synthesize loadedPages;
 
-static int itemsPerPage = 15;
+static int itemsPerRow = 3;
+static int rowsPerPage = 12;
+static int itemsPerPage = 36;
 static int totalWidth = 1024;  // 768 for portrait
 
 - (id)initWithFrame:(CGRect)aRect {
@@ -49,14 +51,14 @@ static int totalWidth = 1024;  // 768 for portrait
   self.items = items;
 
   /* fill first two pages first  (30 items) */
-  for (int i = 0; i < MIN([items count], 30); i++) 
+  for (int i = 0; i < MIN([items count], itemsPerPage * 2); i++) 
   {
     NSDictionary *item = [items objectAtIndex:i];
     NSMutableDictionary *mutableItem = [[NSMutableDictionary alloc] initWithDictionary:item];
     [mutableItem setObject:[NSNumber numberWithInt:i] forKey:@"index"];
     [self addButton: item];
 
-    if (i % 15 == 0) {
+    if (i % itemsPerPage == 0) {
       [self.loadedPages addObject:[NSNumber numberWithInt:(i / 15)]];
     }
   }
@@ -90,7 +92,7 @@ static int totalWidth = 1024;  // 768 for portrait
 
   int col, row, x, y;
   int page = 0;  
-  int cellWidth = 350; 
+  int cellWidth = 250; 
   int cellHeight = 50;
   int columnPadding = 30;
   int leftOffset = 75;
@@ -98,17 +100,17 @@ static int totalWidth = 1024;  // 768 for portrait
   NSString *title = [((NSDictionary *)item) objectForKey:@"title"];
   NSUInteger i = [((NSNumber *)[item objectForKey:@"index"]) intValue];
 
-  col = i % 5;
-  row = (i % itemsPerPage)  / 5;
+  col = i % itemsPerRow;
+  row = (i % itemsPerPage) / itemsPerRow;
   page = i / itemsPerPage;
   x = (totalWidth * page) + leftOffset + ((cellWidth + columnPadding) * col);
-  y = 50 + (190 * row);
+  y = 50 + (50 * row);
 
   if (title) {
   NSLog(@"adding button");
     UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     titleButton.frame = CGRectMake(x, y + cellHeight, cellWidth, 30);
-    titleButton.titleLabel.font = [UIFont systemFontOfSize: 12];
+    titleButton.titleLabel.font = [UIFont systemFontOfSize: 10];
     titleButton.tag = i;
     [titleButton setTitle:title forState:UIControlStateNormal];
     [_scrollView addSubview:titleButton];
