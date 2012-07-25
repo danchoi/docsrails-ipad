@@ -12,7 +12,6 @@
 @synthesize loadedPages;
 
 static int itemsPerRow = 3;
-static int rowsPerPage = 12;
 static int itemsPerPage = 36;
 static int totalWidth = 1024;  // 768 for portrait
 
@@ -28,7 +27,7 @@ static int totalWidth = 1024;  // 768 for portrait
 
   float pageControlWidth = 100;
   int x = 512 - (pageControlWidth / 2);
-  CGRect pageControlFrame = CGRectMake(x, 620, pageControlWidth, 50);
+  CGRect pageControlFrame = CGRectMake(x, 650, pageControlWidth, 50);
   self.pageControl = [[UIPageControl alloc] initWithFrame:pageControlFrame];
   [_pageControl addTarget:self action:@selector(paging:) forControlEvents:UIControlEventValueChanged];
   [self addSubview:_pageControl];
@@ -50,16 +49,15 @@ static int totalWidth = 1024;  // 768 for portrait
   }
   self.items = items;
 
-  /* fill first two pages first  (30 items) */
-  for (int i = 0; i < MIN([items count], itemsPerPage * 2); i++) 
+  for (int i = 0; i < MIN([items count], (itemsPerPage * 2)); i++) 
   {
     NSDictionary *item = [items objectAtIndex:i];
     NSMutableDictionary *mutableItem = [[NSMutableDictionary alloc] initWithDictionary:item];
     [mutableItem setObject:[NSNumber numberWithInt:i] forKey:@"index"];
-    [self addButton: item];
+    [self addButton: mutableItem];
 
     if (i % itemsPerPage == 0) {
-      [self.loadedPages addObject:[NSNumber numberWithInt:(i / 15)]];
+      [self.loadedPages addObject:[NSNumber numberWithInt:(i / itemsPerPage)]];
     }
   }
   _scrollView.contentSize = CGSizeMake(totalWidth * (([items count]/itemsPerPage) + 1), 768);
@@ -74,10 +72,9 @@ static int totalWidth = 1024;  // 768 for portrait
   int pageToLoad = page + 2; // to pages ahead
   if (![self.loadedPages member:[NSNumber numberWithInt:pageToLoad]]) {
     [self.loadedPages addObject:[NSNumber numberWithInt:pageToLoad]];
-    NSLog(@"loading page %d", pageToLoad); 
 
-    int startIndex = MIN([self.items count], pageToLoad * 15);
-    int endIndex = MIN([self.items count], startIndex + 15);
+    int startIndex = MIN([self.items count], pageToLoad * itemsPerPage);
+    int endIndex = MIN([self.items count], startIndex + itemsPerPage);
     for (int i = startIndex; i < endIndex; i++) 
     {
       NSDictionary *item = [self.items objectAtIndex:i];
@@ -104,10 +101,11 @@ static int totalWidth = 1024;  // 768 for portrait
   row = (i % itemsPerPage) / itemsPerRow;
   page = i / itemsPerPage;
   x = (totalWidth * page) + leftOffset + ((cellWidth + columnPadding) * col);
-  y = 50 + (50 * row);
+  y = 20 + (50 * row);
 
   if (title) {
-  NSLog(@"adding button");
+    NSLog(@"adding button");
+    NSLog(@"adding item at index %d %@ at col %d, x %d", i, [item objectForKey:@"title"], col, x);
     UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     titleButton.frame = CGRectMake(x, y + cellHeight, cellWidth, 30);
     titleButton.titleLabel.font = [UIFont systemFontOfSize: 10];

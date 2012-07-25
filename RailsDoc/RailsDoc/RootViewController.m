@@ -8,6 +8,7 @@
 
 - (void)loadView {
   [super loadView];
+  self.view.backgroundColor = [UIColor grayColor];
 
   DB *db = [[DB alloc] init];
   NSArray *methods = [db printMethods];
