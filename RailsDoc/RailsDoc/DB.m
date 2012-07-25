@@ -26,21 +26,28 @@ sqlite3 *database;
   }
 }
 
-- (void) printMethods {
+- (NSArray *) printMethods {
+  NSMutableArray *methods = [NSMutableArray array];
   const char *sql = "select item_id, title, description from pages where parent_item_id is null and description is not null";
   sqlite3_stmt *statement;
   int sqlResult = sqlite3_prepare_v2(database, sql, -1, &statement, NULL);
   if (sqlResult == SQLITE_OK) {
+
     while (sqlite3_step(statement) == SQLITE_ROW) {
       char *itemId = (char *)sqlite3_column_text(statement, 0);
       char *title = (char *)sqlite3_column_text(statement, 1);
       char *description = (char *)sqlite3_column_text(statement, 2);
-      NSLog(@"%s %s", itemId, title);
+      [methods addObject: [NSDictionary dictionaryWithObjectsAndKeys: 
+        [NSString stringWithUTF8String:itemId], @"itemId", 
+        [NSString stringWithUTF8String:title], @"title", 
+        [NSString stringWithUTF8String:description], @"description", 
+        nil]];
     }
     sqlite3_finalize(statement);
   } else {
     NSLog(@"Problem with database");
   }
+  return ((NSArray *)methods);
 
 }
 @end

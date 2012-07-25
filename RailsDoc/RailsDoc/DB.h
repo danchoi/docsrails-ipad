@@ -3,5 +3,5 @@
 
 @interface DB : NSObject {
 }
-- (void)printMethods;
+- (NSArray *)printMethods;
 @end

@@ -13,7 +13,8 @@
     [self.window makeKeyAndVisible];
 
     DB *db = [[DB alloc] init];
-    [db printMethods];
+    NSArray *methods = [db printMethods];
+    NSLog(@"number of methods: %d", [methods count]);
     return YES;
 }
 
