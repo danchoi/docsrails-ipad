@@ -1,12 +1,5 @@
-//
-//  AppDelegate.m
-//  RailsDoc
-//
-//  Created by Daniel Choi on 7/25/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import "AppDelegate.h"
+#import "DB.h"
 
 @implementation AppDelegate
 
@@ -18,6 +11,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    DB *db = [[DB alloc] init];
+    [db printMethods];
     return YES;
 }
 

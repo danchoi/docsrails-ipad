@@ -13,6 +13,9 @@
 		DEEFE11B15C037E300CDD51B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEEFE11915C037E300CDD51B /* InfoPlist.strings */; };
 		DEEFE11D15C037E300CDD51B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE11C15C037E300CDD51B /* main.m */; };
 		DEEFE12115C037E300CDD51B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE12015C037E300CDD51B /* AppDelegate.m */; };
+		DEEFE12915C0396500CDD51B /* DB.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEFE12815C0396500CDD51B /* DB.m */; };
+		DEEFE12B15C03BBC00CDD51B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEFE12A15C03BBC00CDD51B /* libsqlite3.0.dylib */; };
+		DEEFE12D15C03BCD00CDD51B /* rails.db in Resources */ = {isa = PBXBuildFile; fileRef = DEEFE12C15C03BCD00CDD51B /* rails.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		DEEFE11E15C037E300CDD51B /* RailsDoc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RailsDoc-Prefix.pch"; sourceTree = "<group>"; };
 		DEEFE11F15C037E300CDD51B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEEFE12015C037E300CDD51B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEEFE12715C0396500CDD51B /* DB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DB.h; sourceTree = "<group>"; };
+		DEEFE12815C0396500CDD51B /* DB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DB.m; sourceTree = "<group>"; };
+		DEEFE12A15C03BBC00CDD51B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		DEEFE12C15C03BCD00CDD51B /* rails.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = rails.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEFE12B15C03BBC00CDD51B /* libsqlite3.0.dylib in Frameworks */,
 				DEEFE11115C037E200CDD51B /* UIKit.framework in Frameworks */,
 				DEEFE11315C037E200CDD51B /* Foundation.framework in Frameworks */,
 				DEEFE11515C037E200CDD51B /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +53,7 @@
 		DEEFE10115C037E200CDD51B = {
 			isa = PBXGroup;
 			children = (
+				DEEFE12A15C03BBC00CDD51B /* libsqlite3.0.dylib */,
 				DEEFE11615C037E300CDD51B /* RailsDoc */,
 				DEEFE10F15C037E200CDD51B /* Frameworks */,
 				DEEFE10D15C037E200CDD51B /* Products */,
@@ -72,6 +81,8 @@
 		DEEFE11615C037E300CDD51B /* RailsDoc */ = {
 			isa = PBXGroup;
 			children = (
+				DEEFE12715C0396500CDD51B /* DB.h */,
+				DEEFE12815C0396500CDD51B /* DB.m */,
 				DEEFE11F15C037E300CDD51B /* AppDelegate.h */,
 				DEEFE12015C037E300CDD51B /* AppDelegate.m */,
 				DEEFE11715C037E300CDD51B /* Supporting Files */,
@@ -82,6 +93,7 @@
 		DEEFE11715C037E300CDD51B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DEEFE12C15C03BCD00CDD51B /* rails.db */,
 				DEEFE11815C037E300CDD51B /* RailsDoc-Info.plist */,
 				DEEFE11915C037E300CDD51B /* InfoPlist.strings */,
 				DEEFE11C15C037E300CDD51B /* main.m */,
@@ -141,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEEFE11B15C037E300CDD51B /* InfoPlist.strings in Resources */,
+				DEEFE12D15C03BCD00CDD51B /* rails.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +166,7 @@
 			files = (
 				DEEFE11D15C037E300CDD51B /* main.m in Sources */,
 				DEEFE12115C037E300CDD51B /* AppDelegate.m in Sources */,
+				DEEFE12915C0396500CDD51B /* DB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
