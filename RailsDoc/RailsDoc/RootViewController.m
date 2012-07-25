@@ -21,4 +21,19 @@
 - (void)selectItem:(id)sender {
   NSLog(@"selected item");
 }
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+  switch (interfaceOrientation) {
+  case UIInterfaceOrientationLandscapeLeft:
+  case UIInterfaceOrientationLandscapeRight:
+    return YES;
+    break;
+  default:
+    return YES;
+    break;
+  }
+}
+
 @end
